@@ -3,4 +3,4 @@
 : "${PID_FILE:=/var/run/gdm.pid}"
 rm -f "${PID_FILE}"
 # shellcheck disable=SC2086
-exec /usr/local/bin/gdm ${OPTS} 2>&1
+exec /usr/local/sbin/gdm ${OPTS} 2>&1
